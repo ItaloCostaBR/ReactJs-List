@@ -22,8 +22,10 @@ class App extends Component{
         const { characters } = this.state
         return (
             <div className="App">
-                <Table characterData={characters} removeCharacter={this.removeCharacter} />
-                <Form handleSubmit={this.handleSubmit} />
+                <div className="container">
+                    <Table characterData={characters} removeCharacter={this.removeCharacter} />
+                    <Form handleSubmit={this.handleSubmit} />
+                </div>
             </div>
         )
     }
